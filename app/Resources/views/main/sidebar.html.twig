@@ -1,0 +1,56 @@
+<aside class="left-side sidebar-offcanvas">
+    <section class="sidebar">
+        <div class="user-panel">
+        </div>
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+            </div>
+        </form>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="{{ path('equipment_index') }}">
+                    <i class="fa fa-home fa-lg"></i><span>Almacen</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('instalation_index') }}">
+                    <i class="fa fa-home fa-lg"></i><span>Instalaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('mark_index') }}">
+                    <i class="fa fa-home fa-lg"></i><span>Marcas</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('model_index') }}">
+                    <i class="fa fa-home fa-lg"></i><span>Modelos</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <i class="fa fa-laptop fa-lg"></i><span>Movimientos</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="ui-general.html">Externos</a></li>
+                    <li><a href="ui-buttons.html">Internos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ path('type_index') }}">
+                    <i class="fa fa-home fa-lg"></i><span>Tipos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users fa-lg"></i><span>Usuarios</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>

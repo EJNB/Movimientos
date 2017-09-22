@@ -1,0 +1,45 @@
+{% extends 'main/main.html.twig' %}
+
+{% block content %}
+    {{ include('include/flash-message.html.twig') }}
+    <div class="col-md-12">
+        <div class="grid no-border">
+            <div class="grid-header">
+                <i class="fa fa-table"></i>
+                <span class="grid-title">Instalaciones</span>
+                <div class="pull-right grid-tools">
+                    <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
+                    <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
+                </div>
+            </div><!--/.grid-header-->
+            <div class="grid-body">
+                <table id="dataTables1" class="table table-hover display" cellspacing="0" width="100%">
+                    <thead>
+                    <th>No</th>
+                    <th>Marca</th>
+                    <th>Acciones</th>
+                    </thead>
+                    <tbody>
+                    {% for instalation in instalations %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td>{{ instalation.name }}</td>
+                            <td>
+                                <a href="{{ path('instalation_edit',{ 'id' : instalation.id }) }}">
+                                    <i class="fa fa-pencil fa-lg"></i>
+                                </a>
+                                <a href="{{ path('instalation_delete',{ 'id' : instalation.id }) }}">
+                                    <i class="fa fa-trash-o fa-lg"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+                <a href="{{ path('instalation_new') }}" class="btn btn-primary">Agregar</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

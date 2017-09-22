@@ -1,0 +1,4 @@
+services:
+#    system_movement.example:
+#        class: System\MovementBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

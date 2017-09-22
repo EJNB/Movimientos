@@ -1,0 +1,24 @@
+instalation_index:
+    path:     /
+    defaults: { _controller: "SystemMovementBundle:Instalation:index" }
+    methods:  GET
+
+instalation_show:
+    path:     /{id}/show
+    defaults: { _controller: "SystemMovementBundle:Instalation:show" }
+    methods:  GET
+
+instalation_new:
+    path:     /new
+    defaults: { _controller: "SystemMovementBundle:Instalation:new" }
+    methods:  [GET, POST]
+
+instalation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SystemMovementBundle:Instalation:edit" }
+    methods:  [GET, POST]
+
+instalation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SystemMovementBundle:Instalation:delete" }
+    methods:  DELETE

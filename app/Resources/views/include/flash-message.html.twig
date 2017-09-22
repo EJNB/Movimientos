@@ -1,0 +1,23 @@
+{% for flashMessage in app.session.flashbag.get('notice') %}
+    <script src="{{ asset('jQuery/jquery-3.2.1.min.js') }}"></script>
+    <script>
+        $(document).ready(function(){
+            $(function(){
+                new PNotify({
+                    title: '!Exito',
+                    type : 'success',
+                    text: '{{ flashMessage }}'
+                });
+            });
+        })
+    </script>
+{% endfor %}
+
+{#{% for flashMessage in app.session.flashbag.get('error') %}#}
+    {#<div class="ui-pnotify" >#}
+        {#<div class="alert alert-danger alert-dismissible fade in">#}
+            {#<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>#}
+            {#<span class="glyphicon glyphicon-info-sign"></span>{{ flashMessage }}#}
+        {#</div>#}
+    {#</div>#}
+{#{% endfor %}#}

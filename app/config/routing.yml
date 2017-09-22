@@ -1,0 +1,15 @@
+system_security:
+    resource: "@SystemSecurityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+system_movement:
+    resource: "@SystemMovementBundle/Resources/config/routing.yml"
+    prefix:   /Movement
+
+system_backend:
+    resource: "@SystemBackendBundle/Resources/config/routing.yml"
+    prefix:   /Backend
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

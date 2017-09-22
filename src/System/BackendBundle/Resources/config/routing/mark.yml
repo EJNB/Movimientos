@@ -1,0 +1,23 @@
+mark_index:
+    path:     /
+    defaults: { _controller: "SystemBackendBundle:Mark:index" }
+    methods:  GET
+
+mark_show:
+    path:     /{id}/show
+    defaults: { _controller: "SystemBackendBundle:Mark:show" }
+    methods:  GET
+
+mark_new:
+    path:     /new
+    defaults: { _controller: "SystemBackendBundle:Mark:new" }
+    methods:  [GET, POST]
+
+mark_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SystemBackendBundle:Mark:edit" }
+    methods:  [GET, POST]
+
+mark_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SystemBackendBundle:Mark:delete" }

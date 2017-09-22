@@ -1,0 +1,19 @@
+system_backend_model:
+    resource: "@SystemBackendBundle/Resources/config/routing/model.yml"
+    prefix:   /model
+
+system_backend_mark:
+    resource: "@SystemBackendBundle/Resources/config/routing/mark.yml"
+    prefix:   /mark
+
+system_backend_type:
+    resource: "@SystemBackendBundle/Resources/config/routing/type.yml"
+    prefix:   /type
+
+system_backend_equipment:
+    resource: "@SystemBackendBundle/Resources/config/routing/equipment.yml"
+    prefix:   /equipment
+
+system_backend_homepage:
+    path:     /
+    defaults: { _controller: SystemBackendBundle:Default:index }
