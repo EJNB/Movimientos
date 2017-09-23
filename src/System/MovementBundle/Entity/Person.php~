@@ -130,4 +130,37 @@ class Person
     {
         return $this->cI;
     }
+
+    /**
+     * Add movements
+     *
+     * @param \System\MovementBundle\Entity\Movement $movements
+     * @return Person
+     */
+    public function addMovement(\System\MovementBundle\Entity\Movement $movements)
+    {
+        $this->movements[] = $movements;
+
+        return $this;
+    }
+
+    /**
+     * Remove movements
+     *
+     * @param \System\MovementBundle\Entity\Movement $movements
+     */
+    public function removeMovement(\System\MovementBundle\Entity\Movement $movements)
+    {
+        $this->movements->removeElement($movements);
+    }
+
+    /**
+     * Get movements
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMovements()
+    {
+        return $this->movements;
+    }
 }

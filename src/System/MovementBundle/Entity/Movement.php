@@ -22,7 +22,15 @@ class Movement
     private $id;
 
     /**
-     * @var \DateTime
+     * @var \Integer
+     *
+     * @ORM\Column(name="number", type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $number;
+
+    /**
+     * @var \Date
      *
      * @ORM\Column(name="date", type="date")
      */
@@ -192,5 +200,28 @@ class Movement
     public function getPerson()
     {
         return $this->person;
+    }
+
+    /**
+     * Set number
+     *
+     * @param integer $number
+     * @return Movement
+     */
+    public function setNumber($number)
+    {
+        $this->number = $number;
+
+        return $this;
+    }
+
+    /**
+     * Get number
+     *
+     * @return integer 
+     */
+    public function getNumber()
+    {
+        return $this->number;
     }
 }
