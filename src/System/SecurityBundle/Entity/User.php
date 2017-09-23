@@ -213,4 +213,27 @@ class User
     {
         return $this->movements;
     }
+
+    /**
+     * Set occupation
+     *
+     * @param string $occupation
+     * @return User
+     */
+    public function setOccupation($occupation)
+    {
+        $this->occupation = $occupation;
+
+        return $this;
+    }
+
+    /**
+     * Get occupation
+     *
+     * @return string 
+     */
+    public function getOccupation()
+    {
+        return $this->occupation;
+    }
 }

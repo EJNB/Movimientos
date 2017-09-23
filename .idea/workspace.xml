@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e62da90-7e7c-41aa-b3f1-32c07d6d1ced" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Controller/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Resources/config/routing/user.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Tests/Controller/UserControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/SecurityBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php" />
     </list>
     <ignored path="Movimientos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,33 +29,11 @@
       <file leaf-file-name="Movement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7096774">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state vertical-scroll-proportion="-2.8387096">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
-                <marker date="1506183095074" expanded="true" signature="1188:1322" placeholder=" One Product has Many Features. ..." />
+                <marker date="1506184880343" expanded="true" signature="1188:1322" placeholder=" One Product has Many Features. ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.5161295">
-              <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-              <folding>
-                <element signature="e#48#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4538835">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,15 +90,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/user/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.935484">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.6140777">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="e#12#31#0#Twig" expanded="true" />
-                <element signature="e#2225#2236#0#Twig" expanded="true" />
-                <element signature="e#2815#2823#0#Twig" expanded="true" />
+                <element signature="e#2319#2330#0#Twig" expanded="true" />
+                <element signature="e#2909#2917#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,12 +118,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="git add -a" />
-      <command text="git add -A" />
-      <command text="git commit -m &quot;Proyecto ya adelantado&quot;" />
-      <command text="s doctrine:generate:entity" />
-      <command text="s doctrine:schema:update --force" />
-      <command text="s doctrine:generate:entities SystemBackendBundle" />
       <command text="s doctrine:schema:update --force" />
       <command text="s doctrine:generate:entity" />
       <command text="s doctrine:schema:update --force" />
@@ -172,6 +136,12 @@
       <command text="git status" />
       <command text="s doctrine:generate:crud " />
       <command text="git add -A" />
+      <command text="s doctrine:generate:entities SystemSecurityBundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="git add -A" />
+      <command text="s doctrine:generate:entities SystemMovementBundle" />
+      <command text="git add -A" />
+      <command text="git commit -m &quot;agregue el campo accupation en la tabla user&quot;" />
       <command text="s doctrine:generate:entities SystemSecurityBundle" />
     </commandsHistory>
   </component>
@@ -232,9 +202,9 @@
         <option value="$PROJECT_DIR$/app/Resources/views/movement/index.html.twig" />
         <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
       </list>
     </option>
   </component>
@@ -1041,7 +1011,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1397,16 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7096774">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding>
-            <marker date="1506183095074" expanded="true" signature="1188:1322" placeholder=" One Product has Many Features. ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.051461987">
@@ -1444,33 +1404,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.935484">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.69417477">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
           <folding>
-            <element signature="e#12#31#0#Twig" expanded="true" />
-            <element signature="e#2225#2236#0#Twig" expanded="true" />
-            <element signature="e#2815#2823#0#Twig" expanded="true" />
+            <marker date="1506184880343" expanded="true" signature="1188:1322" placeholder=" One Product has Many Features. ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.5161295">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.17475729">
+          <caret line="85" column="7" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
           <folding>
             <element signature="e#48#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4538835">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.6140777">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="true" />
+            <element signature="e#2319#2330#0#Twig" expanded="true" />
+            <element signature="e#2909#2917#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
