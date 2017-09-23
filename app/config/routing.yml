@@ -1,6 +1,6 @@
 system_security:
     resource: "@SystemSecurityBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /Security
 
 system_movement:
     resource: "@SystemMovementBundle/Resources/config/routing.yml"

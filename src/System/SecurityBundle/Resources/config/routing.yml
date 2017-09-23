@@ -1,3 +1,7 @@
+system_security_user:
+    resource: "@SystemSecurityBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
 system_security_homepage:
     path:     /
     defaults: { _controller: SystemSecurityBundle:Default:index }

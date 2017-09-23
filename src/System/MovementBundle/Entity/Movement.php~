@@ -201,4 +201,27 @@ class Movement
     {
         return $this->person;
     }
+
+    /**
+     * Set number
+     *
+     * @param integer $number
+     * @return Movement
+     */
+    public function setNumber($number)
+    {
+        $this->number = $number;
+
+        return $this;
+    }
+
+    /**
+     * Get number
+     *
+     * @return integer 
+     */
+    public function getNumber()
+    {
+        return $this->number;
+    }
 }
