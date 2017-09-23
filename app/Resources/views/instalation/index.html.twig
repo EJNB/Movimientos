@@ -16,20 +16,31 @@
             <div class="grid-body">
                 <table id="dataTables1" class="table table-hover display" cellspacing="0" width="100%">
                     <thead>
-                    <th>No</th>
-                    <th>Marca</th>
-                    <th>Acciones</th>
+                        <th>No</th>
+                        <th>Territorio</th>
+                        <th>Instalaci&oacuten</th>
+                        <th>Movimientos</th>
+                        <th>Acciones</th>
                     </thead>
                     <tbody>
                     {% for instalation in instalations %}
                         <tr>
                             <td>{{ loop.index }}</td>
+                            <td>{{ instalation.territoty }}</td>
                             <td>{{ instalation.name }}</td>
+                            {#<td><a href="#"><span class="badge">42</span></a></td>#}
+                            <td><a href="#"><span class="label label-success">{{ instalation.movements | length }}</span></a></td>
                             <td>
-                                <a href="{{ path('instalation_edit',{ 'id' : instalation.id }) }}">
+                                <a href="{{ path('instalation_edit',{ 'id' : instalation.id }) }}" data-toggle="tooltip" data-placement="top" title="Editar">
                                     <i class="fa fa-pencil fa-lg"></i>
                                 </a>
-                                <a href="{{ path('instalation_delete',{ 'id' : instalation.id }) }}">
+                                <a href="javascript:void(0)"
+                                   class="link-tooltip link-eliminar"
+                                   data-url="{{ path('instalation_delete',{ 'id':instalation.id }) }}"
+                                   data-toggle="modal"
+                                   data-target="#modal-delete"
+                                   data-placement="top"
+                                   title="Eliminar">
                                     <i class="fa fa-trash-o fa-lg"></i>
                                 </a>
                             </td>
@@ -42,4 +53,5 @@
             </div>
         </div>
     </div>
+    {{ include('include/modals.html.twig') }}
 {% endblock %}

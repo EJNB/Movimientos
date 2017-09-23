@@ -2,6 +2,7 @@
 
 namespace System\BackendBundle\Controller;
 
+use Symfony\Component\Validator\Constraints\DateTime;
 use System\BackendBundle\Entity\Equipment;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,7 +21,9 @@ class EquipmentController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $equipment = $em->getRepository('SystemBackendBundle:Equipment')->findAll();
+        $equipment = $em->getRepository('SystemBackendBundle:Equipment')->findBy(array(
+            'movement' => null
+        ));
 
         return $this->render('equipment/index.html.twig', array(
             'equipment' => $equipment,
@@ -38,7 +41,15 @@ class EquipmentController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
             $em = $this->getDoctrine()->getManager();
+
+            $equipment->setCreateAt(new \DateTime('now'));
+//            $mark = $request->request->get('system_backendbundle_equipment[]');
+            $name_mark = $em->getRepository('SystemBackendBundle:Model')->find($equipment->getModel())->getMark();
+//            dump($name_mark->getName());
+            $equipment->setDescription($equipment->getType().' '.$name_mark.' '.$equipment->getModel().' '.$equipment->getNi().' '.$equipment->getNs());
+
             $em->persist($equipment);
             $em->flush();
 

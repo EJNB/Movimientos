@@ -24,7 +24,7 @@ class Movement
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
@@ -169,28 +169,5 @@ class Movement
     public function getEquipments()
     {
         return $this->equipments;
-    }
-
-    /**
-     * Set person
-     *
-     * @param \System\MovementBundle\Entity\Person $person
-     * @return Movement
-     */
-    public function setPerson(\System\MovementBundle\Entity\Person $person = null)
-    {
-        $this->person = $person;
-
-        return $this;
-    }
-
-    /**
-     * Get person
-     *
-     * @return \System\MovementBundle\Entity\Person 
-     */
-    public function getPerson()
-    {
-        return $this->person;
     }
 }

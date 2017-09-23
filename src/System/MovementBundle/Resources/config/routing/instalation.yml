@@ -21,4 +21,4 @@ instalation_edit:
 instalation_delete:
     path:     /{id}/delete
     defaults: { _controller: "SystemMovementBundle:Instalation:delete" }
-    methods:  DELETE
+#    methods:  DELETE

@@ -1,16 +1,75 @@
-{% extends 'base.html.twig' %}
+{% extends 'main/main.html.twig' %}
 
-{% block body %}
-    <h1>Instalation creation</h1>
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="grid">
+                <div class="grid-header">
+                    <i class="fa fa-align-left"></i>
+                    <span class="grid-title">Agregar Equipo</span>
+                    <div class="pull-right grid-tools">
+                        <a data-widget="collapse" title="Collapse"><i class="fa fa-chevron-up"></i></a>
+                        <a data-widget="reload" title="Reload"><i class="fa fa-refresh"></i></a>
+                        <a data-widget="remove" title="Remove"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="grid-body">
+                    {{ form_start(form, {'attr': { 'class':'form-horizontal', 'role' : 'form' }  }) }}
+                    <div class="form-group">
+                        {{ form_label(form.territoty,'Territorio', { 'label_attr':{ 'class':'col-sm-4 control-label' } }) }}
+                        <div class="col-sm-4">
+                            {{ form_errors(form.territoty) }}
+                            {{ form_widget(form.territoty, {'attr': {'class':'form-control selectpicker','data-live-search':'true','title':'Seleccione el territorio','data-size':'10'}}) }}
+                        </div>
+                    </div>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
+                    <div class="form-group">
+                        {{ form_label(form.name,'Instalación', { 'label_attr':{ 'class':'col-sm-4 control-label' } }) }}
+                        <div class="col-sm-4">
+                            {{ form_errors(form.name) }}
+                            {{ form_widget(form.name, {'attr': {'class':'form-control','placeholder':'Introdusca el nombre de la instalación'}}) }}
+                        </div>
+                    </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('instalation_index') }}">Back to the list</a>
-        </li>
-    </ul>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label"></label>
+                        <div class="col-sm-4">
+                            <input type="submit" value="Crear" class="btn btn-primary"/>
+                            <a href="{{ path('instalation_index') }}" class="btn btn-default">Regresar al listado</a>
+                        </div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 {% endblock %}

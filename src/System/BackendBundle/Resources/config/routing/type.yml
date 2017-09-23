@@ -3,11 +3,6 @@ type_index:
     defaults: { _controller: "SystemBackendBundle:Type:index" }
     methods:  GET
 
-type_show:
-    path:     /{id}/show
-    defaults: { _controller: "SystemBackendBundle:Type:show" }
-    methods:  GET
-
 type_new:
     path:     /new
     defaults: { _controller: "SystemBackendBundle:Type:new" }
@@ -21,4 +16,4 @@ type_edit:
 type_delete:
     path:     /{id}/delete
     defaults: { _controller: "SystemBackendBundle:Type:delete" }
-    methods:  DELETE
+#    methods:  DELETE

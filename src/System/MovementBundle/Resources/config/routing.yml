@@ -2,6 +2,10 @@ system_movement_instalation:
     resource: "@SystemMovementBundle/Resources/config/routing/instalation.yml"
     prefix:   /instalation
 
+system_movement_movement:
+    resource: "@SystemMovementBundle/Resources/config/routing/movement.yml"
+    prefix:   /movement
+
 system_movement_homepage:
     path:     /
     defaults: { _controller: SystemMovementBundle:Default:index }

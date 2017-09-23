@@ -1,0 +1,21 @@
+{% extends 'main/main.html.twig' %}
+
+{% block content %}
+    <h1>Movement creation</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <select multiple name="equipment_selected[]">
+            {% for equipment in equipments %}
+                <option value="{{ equipment.id }}">{{ equipment.description }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('movement_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

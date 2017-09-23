@@ -3,11 +3,6 @@ model_index:
     defaults: { _controller: "SystemBackendBundle:Model:index" }
     methods:  GET
 
-model_show:
-    path:     /{id}/show
-    defaults: { _controller: "SystemBackendBundle:Model:show" }
-    methods:  GET
-
 model_new:
     path:     /new
     defaults: { _controller: "SystemBackendBundle:Model:new" }
@@ -21,4 +16,4 @@ model_edit:
 model_delete:
     path:     /{id}/delete
     defaults: { _controller: "SystemBackendBundle:Model:delete" }
-    methods:  DELETE
+#    methods:  DELETE

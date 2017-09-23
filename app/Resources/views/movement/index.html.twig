@@ -1,0 +1,39 @@
+{% extends 'main/main.html.twig' %}
+
+{% block content %}
+    <h1>Movements list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for movement in movements %}
+            <tr>
+                <td><a href="{{ path('movement_show', { 'id': movement.id }) }}">{{ movement.id }}</a></td>
+                <td>{% if movement.date %}{{ movement.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('movement_show', { 'id': movement.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('movement_edit', { 'id': movement.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('movement_new') }}">Create a new movement</a>
+        </li>
+    </ul>
+{% endblock %}

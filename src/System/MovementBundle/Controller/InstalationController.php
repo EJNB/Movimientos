@@ -42,7 +42,12 @@ class InstalationController extends Controller
             $em->persist($instalation);
             $em->flush();
 
-            return $this->redirectToRoute('instalation_show', array('id' => $instalation->getId()));
+            $this->addFlash(
+                'notice',
+                'Sus datos fueron guardados correctamente'
+            );
+
+            return $this->redirectToRoute('instalation_index');
         }
 
         return $this->render('instalation/new.html.twig', array(
@@ -71,20 +76,22 @@ class InstalationController extends Controller
      */
     public function editAction(Request $request, Instalation $instalation)
     {
-        $deleteForm = $this->createDeleteForm($instalation);
         $editForm = $this->createForm('System\MovementBundle\Form\InstalationType', $instalation);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            $this->addFlash(
+                'notice',
+                'Sus datos han sido actualizados sactifactoriamente'
+            );
 
-            return $this->redirectToRoute('instalation_edit', array('id' => $instalation->getId()));
+            return $this->redirectToRoute('instalation_index');
         }
 
         return $this->render('instalation/edit.html.twig', array(
             'instalation' => $instalation,
             'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -94,31 +101,17 @@ class InstalationController extends Controller
      */
     public function deleteAction(Request $request, Instalation $instalation)
     {
-        $form = $this->createDeleteForm($instalation);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($instalation);
-            $em->flush();
-        }
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($instalation);
+        $em->flush();
+
+        $this->addFlash(
+            'notice',
+            'Sus datos han sido eliminados correctamente'
+        );
+
 
         return $this->redirectToRoute('instalation_index');
-    }
-
-    /**
-     * Creates a form to delete a instalation entity.
-     *
-     * @param Instalation $instalation The instalation entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm(Instalation $instalation)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('instalation_delete', array('id' => $instalation->getId())))
-            ->setMethod('DELETE')
-            ->getForm()
-        ;
     }
 }

@@ -26,10 +26,17 @@
                             <td>{{ loop.index }}</td>
                             <td>{{ model.name  }}</td>
                             <td>
-                                <a href="{{ path('model_edit',{ 'id' : model.id }) }}">
+                                <a href="{{ path('model_edit',{ 'id' : model.id }) }}" data-toggle="tooltip" data-placement="top" title="Editar">
                                     <i class="fa fa-pencil fa-lg"></i>
                                 </a>
-                                <a href="{{ path('mark_delete',{ 'id' : model.id }) }}">
+                                <a href="javascript:void(0)"
+                                   class="link-tooltip link-eliminar"
+                                   data-url="{{ path('model_delete',{ 'id':model.id }) }}"
+                                   data-toggle="modal"
+                                   data-target="#modal-delete"
+                                   data-placement="top"
+                                   title="Eliminar"
+                                >
                                     <i class="fa fa-trash-o fa-lg"></i>
                                 </a>
                             </td>
@@ -42,4 +49,5 @@
             </div>
         </div>
     </div>
+    {{ include('include/modals.html.twig') }}
 {% endblock %}

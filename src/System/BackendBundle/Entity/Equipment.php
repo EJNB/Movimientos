@@ -29,7 +29,7 @@ class Equipment
     private $description;
 
     /**
-     * @var int
+     * @var string
      *
      * @ORM\Column(name="ns", type="string", length=255)
      */
@@ -42,11 +42,12 @@ class Equipment
      */
     private $ni;
 
-    /*
-     * Fecha de alta en el sistema del equipo
-     * @ORM\Column(name="create_at", type="date")
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="create_at", type="datetime")
      */
-    private $create_at;
+    private $createAt;
 
     /**
      * Many Equipment have One mark.
@@ -105,7 +106,7 @@ class Equipment
     /**
      * Set ns
      *
-     * @param integer $ns
+     * @param string $ns
      * @return Equipment
      */
     public function setNs($ns)
@@ -118,7 +119,7 @@ class Equipment
     /**
      * Get ns
      *
-     * @return integer 
+     * @return string 
      */
     public function getNs()
     {
@@ -149,49 +150,26 @@ class Equipment
     }
 
     /**
-     * Set mark
+     * Set createAt
      *
-     * @param \System\BackendBundle\Entity\Mark $mark
+     * @param \DateTime $createAt
      * @return Equipment
      */
-    public function setMark(\System\BackendBundle\Entity\Mark $mark = null)
+    public function setCreateAt($createAt)
     {
-        $this->mark = $mark;
+        $this->createAt = $createAt;
 
         return $this;
     }
 
     /**
-     * Get mark
+     * Get createAt
      *
-     * @return \System\BackendBundle\Entity\Mark 
+     * @return \DateTime 
      */
-    public function getMark()
+    public function getCreateAt()
     {
-        return $this->mark;
-    }
-
-    /**
-     * Set type
-     *
-     * @param \System\BackendBundle\Entity\Type $type
-     * @return Equipment
-     */
-    public function setType(\System\BackendBundle\Entity\Type $type = null)
-    {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    /**
-     * Get type
-     *
-     * @return \System\BackendBundle\Entity\Type 
-     */
-    public function getType()
-    {
-        return $this->type;
+        return $this->createAt;
     }
 
     /**
@@ -218,6 +196,29 @@ class Equipment
     }
 
     /**
+     * Set type
+     *
+     * @param \System\BackendBundle\Entity\Type $type
+     * @return Equipment
+     */
+    public function setType(\System\BackendBundle\Entity\Type $type = null)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return \System\BackendBundle\Entity\Type 
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
      * Set movement
      *
      * @param \System\MovementBundle\Entity\Movement $movement
@@ -238,5 +239,10 @@ class Equipment
     public function getMovement()
     {
         return $this->movement;
+    }
+
+    public function __toString()
+    {
+        return $this->getDescription();
     }
 }

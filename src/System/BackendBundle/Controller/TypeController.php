@@ -57,39 +57,28 @@ class TypeController extends Controller
     }
 
     /**
-     * Finds and displays a type entity.
-     *
-     */
-    public function showAction(Type $type)
-    {
-        $deleteForm = $this->createDeleteForm($type);
-
-        return $this->render('type/show.html.twig', array(
-            'type' => $type,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing type entity.
      *
      */
     public function editAction(Request $request, Type $type)
     {
-        $deleteForm = $this->createDeleteForm($type);
         $editForm = $this->createForm('System\BackendBundle\Form\TypeType', $type);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('type_edit', array('id' => $type->getId()));
+            $this->get('session')->getFlashBag()->add(
+                'notice',
+                'Sus datos han sido actualizados satisfactoriamente'
+            );
+
+            return $this->redirectToRoute('type_index');
         }
 
         return $this->render('type/edit.html.twig', array(
             'type' => $type,
             'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -97,33 +86,18 @@ class TypeController extends Controller
      * Deletes a type entity.
      *
      */
-    public function deleteAction(Request $request, Type $type)
+    public function deleteAction(Type $type)
     {
-        $form = $this->createDeleteForm($type);
-        $form->handleRequest($request);
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($type);
+        $em->flush();
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($type);
-            $em->flush();
-        }
+        $this->get('session')->getFlashBag()->add(
+            'notice',
+            'Sus datos han sido eliminados satisfactoriamente'
+        );
 
         return $this->redirectToRoute('type_index');
     }
 
-    /**
-     * Creates a form to delete a type entity.
-     *
-     * @param Type $type The type entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm(Type $type)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('type_delete', array('id' => $type->getId())))
-            ->setMethod('DELETE')
-            ->getForm()
-        ;
-    }
 }

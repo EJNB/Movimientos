@@ -17,7 +17,7 @@
                 <table id="dataTables1" class="table table-hover display" cellspacing="0" width="100%">
                     <thead>
                         <th>No</th>
-                        <th>Type</th>
+                        <th>Tipo</th>
                         <th>Acciones</th>
                     </thead>
                     <tbody>
@@ -26,10 +26,17 @@
                             <td>{{ loop.index }}</td>
                             <td>{{ type.name }}</td>
                             <td>
-                                <a href="{{ path('type_edit',{ 'id' : type.id }) }}">
+                                <a href="{{ path('type_edit',{ 'id' : type.id }) }}" data-toggle="tooltip" data-placement="top" title="Editar">
                                     <i class="fa fa-pencil fa-lg"></i>
                                 </a>
-                                <a href="{{ path('type_delete',{ 'id' : type.id }) }}">
+                                <a href="javascript:void(0)"
+                                   class="link-tooltip link-eliminar"
+                                   data-url="{{ path('type_delete',{ 'id':type.id }) }}"
+                                   data-toggle="modal"
+                                   data-target="#modal-delete"
+                                   data-placement="top"
+                                   title="Eliminar"
+                                >
                                     <i class="fa fa-trash-o fa-lg"></i>
                                 </a>
                             </td>
@@ -38,42 +45,9 @@
 
                     </tbody>
                 </table>
+                <a href="{{ path('type_new') }}" class="btn btn-primary">Agregar</a>
             </div>
         </div>
     </div>
-    {#<h1 class="page-header">Types list</h1>#}
-
-    {#<table class="">#}
-        {#<thead>#}
-            {#<tr>#}
-                {#<th>Id</th>#}
-                {#<th>Name</th>#}
-                {#<th>Actions</th>#}
-            {#</tr>#}
-        {#</thead>#}
-        {#<tbody>#}
-        {#{% for type in types %}#}
-            {#<tr>#}
-                {#<td><a href="{{ path('type_show', { 'id': type.id }) }}">{{ type.id }}</a></td>#}
-                {#<td>{{ type.name }}</td>#}
-                {#<td>#}
-                    {#<ul>#}
-                        {#<li>#}
-                            {#<a href="{{ path('type_show', { 'id': type.id }) }}">show</a>#}
-                        {#</li>#}
-                        {#<li>#}
-                            {#<a href="{{ path('type_edit', { 'id': type.id }) }}">edit</a>#}
-                        {#</li>#}
-                    {#</ul>#}
-                {#</td>#}
-            {#</tr>#}
-        {#{% endfor %}#}
-        {#</tbody>#}
-    {#</table>#}
-
-    {#<ul>#}
-        {#<li>#}
-            {#<a href="{{ path('type_new') }}">Create a new type</a>#}
-        {#</li>#}
-    {#</ul>#}
+    {{ include('include/modals.html.twig') }}
 {% endblock %}
