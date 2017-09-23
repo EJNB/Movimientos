@@ -49,8 +49,8 @@ class MovementController extends Controller
                 //tomar el id del equipo
                 $equipment = $repository->find($valor);
                 $equipment->setMovement($movement);
-
-                //despues q actualizo el mov elimino el equipo de la tablas almacen
+                $cant_movement = count($em->getRepository('SystemMovementBundle:Movement')->findAll());
+                $movement->setNumber($cant_movement+1);
             }
 
             $em->persist($movement);

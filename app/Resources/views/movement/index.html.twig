@@ -18,6 +18,11 @@
                     <thead>
                     <th>No</th>
                     <th>Fecha</th>
+                    <th>Instalaci&oacuten</th>
+                    <th>Entrega</th>
+                    <th>Recibe</th>
+                    <th>N&uacutemero de movimiento</th>
+                    {#<th>Documentos Escaneados</th>#}
                     <th>Acciones</th>
                     </thead>
                     <tbody>
@@ -25,6 +30,11 @@
                         <tr>
                             <td>{{ loop.index }}</td>
                             <td>{{ movement.date | date('d-m-Y') }}</td>
+                            <td>{{ movement.instalation }}</td>
+                            <td>{{ movement.user }}</td>
+                            <td>{{ movement.person }}</td>
+                            <td>{{ movement.number }}</td>
+                            {#<td></td>#}
                             <td>
                                 <a href="{{ path('movement_show', { 'id': movement.id }) }}" data-toggle="tooltip" data-placement="top" title="Ver">
                                     <i class="fa fa-eye fa-lg"></i>

@@ -45,6 +45,4 @@ class MovementType extends AbstractType
     {
         return 'system_movementbundle_movement';
     }
-
-
 }
