@@ -176,4 +176,27 @@ class Person
     {
         return $this->getName();
     }
+
+    /**
+     * Set instalation
+     *
+     * @param \System\MovementBundle\Entity\Instalation $instalation
+     * @return Person
+     */
+    public function setInstalation(\System\MovementBundle\Entity\Instalation $instalation = null)
+    {
+        $this->instalation = $instalation;
+
+        return $this;
+    }
+
+    /**
+     * Get instalation
+     *
+     * @return \System\MovementBundle\Entity\Instalation 
+     */
+    public function getInstalation()
+    {
+        return $this->instalation;
+    }
 }

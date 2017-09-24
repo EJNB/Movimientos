@@ -35,6 +35,7 @@ class MovementController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $repository = $em->getRepository('SystemBackendBundle:Equipment');
+        $persons = $em->getRepository('SystemMovementBundle:Person')->findAll();
         $movement = new Movement();
         $form = $this->createForm('System\MovementBundle\Form\MovementType', $movement);
         $form->handleRequest($request);
@@ -64,6 +65,7 @@ class MovementController extends Controller
         return $this->render('movement/new.html.twig', array(
             'movement' => $movement,
             'equipments' => $equipments,
+            'persons' => $persons,
             'form' => $form->createView(),
         ));
     }

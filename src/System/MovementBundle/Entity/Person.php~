@@ -43,6 +43,14 @@ class Person
     private $cI;
 
     /**
+     * Many Persons have One Intaltion.
+     * @ORM\ManyToOne(targetEntity="Instalation", inversedBy="persons")
+     * @ORM\JoinColumn(name="instalation_id", referencedColumnName="id")
+     */
+    private $instalation;
+
+
+    /**
      * One Product has Many Features.
      * @ORM\OneToMany(targetEntity="Movement", mappedBy="person")
      */
@@ -162,5 +170,10 @@ class Person
     public function getMovements()
     {
         return $this->movements;
+    }
+
+    public function __toString()
+    {
+        return $this->getName();
     }
 }

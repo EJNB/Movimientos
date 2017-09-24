@@ -1,0 +1,8 @@
+<select name="person" class="form-control selectpicker" data-live-search="true" title="Seleccione la persona" required>
+    <option value="0">No esta en esta lista</option>
+    {% for person in persons %}
+        <option value="{{ person.id }}">{{ person.name }}</option>
+    {% endfor %}
+</select>
+
+

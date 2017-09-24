@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e62da90-7e7c-41aa-b3f1-32c07d6d1ced" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/include/persons.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/movement/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/movement/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/movement/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/movement/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php" afterPath="$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php" afterPath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php" afterPath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php" afterPath="$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php" afterPath="$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/custom/script.js" afterPath="$PROJECT_DIR$/web/custom/script.js" />
     </list>
     <ignored path="Movimientos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,32 +37,27 @@
       <file leaf-file-name="Movement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.880597">
-              <caret line="49" column="0" selection-start-line="43" selection-start-column="5" selection-end-line="49" selection-end-column="0" />
+            <state vertical-scroll-proportion="6.8955226">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
-                <marker date="1506207727808" expanded="true" signature="1134:1268" placeholder=" One Product has Many Features. ..." />
+                <marker date="1506208119443" expanded="true" signature="1134:1268" placeholder=" One Product has Many Features. ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/movement/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.032259">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instalation.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8071429">
-              <caret line="32" column="66" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="66" />
-              <folding />
+            <state vertical-scroll-proportion="-8.16129">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+              <folding>
+                <element signature="e#12#31#0#Twig" expanded="false" />
+                <element signature="e#1855#1868#0#Twig" expanded="false" />
+                <element signature="e#2109#2122#0#Twig" expanded="false" />
+                <element signature="e#2504#2519#0#Twig" expanded="false" />
+                <element signature="e#3102#3114#0#Twig" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,20 +65,13 @@
       <file leaf-file-name="MovementController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7096774">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EquipmentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/BackendBundle/Controller/EquipmentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+            <state vertical-scroll-proportion="-19.161291">
+              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding>
-                <element signature="e#51#104#0#PHP" expanded="true" />
+                <element signature="e#471#502#1#PHP" expanded="true" />
+                <element signature="e#845#876#1#PHP" expanded="true" />
+                <element signature="e#917#946#1#PHP" expanded="true" />
+                <element signature="e#1615#1646#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +80,20 @@
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/movement/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state vertical-scroll-proportion="-13.870968">
+              <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
+              <folding>
+                <element signature="e#12#31#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persons.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/include/persons.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.677419">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +102,20 @@
       <file leaf-file-name="MovementType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.645162">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state vertical-scroll-proportion="-5.290323">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding>
+                <element signature="e#46#86#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/custom/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4631579">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -109,11 +125,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:entities SystemMovementBundle" />
-      <command text="s doctrine:generate:crud " />
-      <command text="s doctrine:schema:update --force" />
-      <command text="git add -A" />
-      <command text="git commit -m &quot;Esta bien adelantado la parte de los movimientos&quot;" />
       <command text="s doctrine:schema:update --force" />
       <command text="s doctrine:generate:entities SystemMovementBundle" />
       <command text="s doctrine:schema:update --force" />
@@ -134,6 +145,11 @@
       <command text="s doctrine:schema:update --force" />
       <command text="s doctrine:generate:entities SystemMovementBundle" />
       <command text="s doctrine:schema:update --force" />
+      <command text="git add -A" />
+      <command text="git commit -m &quot;quite la relacion / instalation y movemet y la puse en tre person&lt;&lt;----&gt; instalation&quot;" />
+      <command text="git log" />
+      <command text="s doctrine:generate:entities SystemMovementBundle" />
+      <command text="s doctrine:schema:update --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -145,10 +161,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/assets/plugins/codemirror/mode/vb/index.html" />
-        <option value="$PROJECT_DIR$/app/Resources/views/main/heades.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/mark/index.html.twig" />
-        <option value="$PROJECT_DIR$/web/custom/script.js" />
         <option value="$PROJECT_DIR$/src/System/BackendBundle/Resources/config/routing/equipment.yml" />
         <option value="$PROJECT_DIR$/src/System/BackendBundle/Entity/Type.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/equipment/edit.html.twig" />
@@ -180,22 +193,25 @@
         <option value="$PROJECT_DIR$/app/Resources/views/type/new.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/type/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/System/MovementBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig" />
         <option value="$PROJECT_DIR$/src/System/BackendBundle/Entity/Equipment.php" />
         <option value="$PROJECT_DIR$/src/System/BackendBundle/Entity/Model.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/movement/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/System/BackendBundle/Controller/EquipmentController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/System/SecurityBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/System/SecurityBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/movement/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php" />
-        <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php" />
-        <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php" />
         <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php" />
+        <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/movement/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/src/System/BackendBundle/Controller/EquipmentController.php" />
+        <option value="$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/movement/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/main/main.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/include/persons.html.twig" />
+        <option value="$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php" />
+        <option value="$PROJECT_DIR$/web/custom/script.js" />
       </list>
     </option>
   </component>
@@ -796,7 +812,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -822,85 +838,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="movement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="instalation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movimientos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment" />
+              <option name="myItemId" value="include" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1010,7 +948,7 @@
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5720721" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5720721" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1038,24 +976,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/BackendBundle/Resources/config/routing/equipment.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5491573">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/equipment/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7567568">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/include/modals.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.346154">
@@ -1218,20 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/main/main.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5451895">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18221575">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Resources/config/routing/movement.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1263,24 +1175,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/instalation/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53103447">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25344828">
-          <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/model/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08009709">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="51" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,6 +1187,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14563107">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,6 +1195,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3264563">
           <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,13 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6140777">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/SecurityBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18011697">
@@ -1352,70 +1246,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39805827">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="false" />
+            <element signature="e#2319#2330#0#Twig" expanded="false" />
+            <element signature="e#2909#2917#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/instalation/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47694173">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
+          <folding>
+            <element signature="e#1731#1747#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.8955226">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <marker date="1506208119443" expanded="true" signature="1134:1268" placeholder=" One Product has Many Features. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/main/sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="e#2006#2016#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/instalation/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5339806">
+          <caret line="50" column="8" selection-start-line="3" selection-start-column="4" selection-end-line="50" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/movement/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7330097">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state vertical-scroll-proportion="-8.16129">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="false" />
+            <element signature="e#1855#1868#0#Twig" expanded="false" />
+            <element signature="e#2109#2122#0#Twig" expanded="false" />
+            <element signature="e#2504#2519#0#Twig" expanded="false" />
+            <element signature="e#3102#3114#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/BackendBundle/Controller/EquipmentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.37378642">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="47" selection-end-column="81" />
           <folding>
-            <element signature="e#51#104#0#PHP" expanded="true" />
+            <element signature="e#51#104#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.161291">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="e#471#502#1#PHP" expanded="true" />
+            <element signature="e#845#876#1#PHP" expanded="true" />
+            <element signature="e#917#946#1#PHP" expanded="true" />
+            <element signature="e#1615#1646#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/movement/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state vertical-scroll-proportion="-13.870968">
+          <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8313107">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Controller/MovementController.php">
+    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7096774">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.66504854">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/main/main.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2936893">
+          <caret line="11" column="127" selection-start-line="11" selection-start-column="127" selection-end-line="11" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/include/persons.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Form/MovementType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.645162">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Movement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.880597">
-          <caret line="49" column="0" selection-start-line="43" selection-start-column="5" selection-end-line="49" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.290323">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <marker date="1506207727808" expanded="true" signature="1134:1268" placeholder=" One Product has Many Features. ..." />
+            <element signature="e#46#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Person.php">
+    <entry file="file://$PROJECT_DIR$/web/custom/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.032259">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/MovementBundle/Entity/Instalation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8071429">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.4631579">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
       </provider>

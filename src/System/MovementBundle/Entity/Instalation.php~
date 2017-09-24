@@ -28,11 +28,11 @@ class Instalation
      */
     private $name;
 
-    /**
-     * One Product has Many Features.
-     * @ORM\OneToMany(targetEntity="Movement", mappedBy="instalation")
+       /**
+     * One Intalation has Many Persons.
+     * @ORM\OneToMany(targetEntity="Person", mappedBy="X")
      */
-    private $movements;
+    private $persons;
 
     /**
      * Many Features have One Product.
@@ -42,7 +42,7 @@ class Instalation
     private $territoty;
 
     public function __construct() {
-        $this->movements = new ArrayCollection();
+        $this->persons = new ArrayCollection();
     }
 
     /**
@@ -76,39 +76,6 @@ class Instalation
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * Add movements
-     *
-     * @param \System\MovementBundle\Entity\Movement $movements
-     * @return Instalation
-     */
-    public function addMovement(\System\MovementBundle\Entity\Movement $movements)
-    {
-        $this->movements[] = $movements;
-
-        return $this;
-    }
-
-    /**
-     * Remove movements
-     *
-     * @param \System\MovementBundle\Entity\Movement $movements
-     */
-    public function removeMovement(\System\MovementBundle\Entity\Movement $movements)
-    {
-        $this->movements->removeElement($movements);
-    }
-
-    /**
-     * Get movements
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getMovements()
-    {
-        return $this->movements;
     }
 
     /**

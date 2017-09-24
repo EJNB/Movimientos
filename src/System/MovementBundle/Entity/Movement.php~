@@ -23,9 +23,7 @@ class Movement
 
     /**
      * @var \Integer
-     *
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue
      */
     private $number;
 
@@ -43,12 +41,12 @@ class Movement
      */
     private $user;
 
-    /**
-     * Many Features have One Product.
-     * @ORM\ManyToOne(targetEntity="Instalation", inversedBy="movements")
-     * @ORM\JoinColumn(name="instalation_id", referencedColumnName="id")
-     */
-    private $instalation;
+//    /**
+//     * Many Features have One Product.
+//     * @ORM\ManyToOne(targetEntity="Instalation", inversedBy="movements")
+//     * @ORM\JoinColumn(name="instalation_id", referencedColumnName="id")
+//     */
+//    private $instalation;
 
     /**
      * One Product has Many Features.
@@ -122,29 +120,29 @@ class Movement
     {
         return $this->user;
     }
-
-    /**
-     * Set instalation
-     *
-     * @param \System\MovementBundle\Entity\Instalation $instalation
-     * @return Movement
-     */
-    public function setInstalation(\System\MovementBundle\Entity\Instalation $instalation = null)
-    {
-        $this->instalation = $instalation;
-
-        return $this;
-    }
-
-    /**
-     * Get instalation
-     *
-     * @return \System\MovementBundle\Entity\Instalation 
-     */
-    public function getInstalation()
-    {
-        return $this->instalation;
-    }
+//
+//    /**
+//     * Set instalation
+//     *
+//     * @param \System\MovementBundle\Entity\Instalation $instalation
+//     * @return Movement
+//     */
+//    public function setInstalation(\System\MovementBundle\Entity\Instalation $instalation = null)
+//    {
+//        $this->instalation = $instalation;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get instalation
+//     *
+//     * @return \System\MovementBundle\Entity\Instalation
+//     */
+//    public function getInstalation()
+//    {
+//        return $this->instalation;
+//    }
 
     /**
      * Add equipments

@@ -15,8 +15,12 @@ class MovementType extends AbstractType
     {
         $builder
             ->add('date')
+            ->add('instalation','entity',array(
+                'class' => 'System\MovementBundle\Entity\Instalation',
+                'mapped' => false
+            ))
 //            ->add('user')
-            ->add('instalation')
+//            ->add('instalation')
 //            ->add('equipments','entity',array(
 //                'class' => 'System\BackendBundle\Entity\Equipment',
 //                'attr' => array(
@@ -24,7 +28,7 @@ class MovementType extends AbstractType
 //                    'multiple' => true
 //                )
 //            ))
-            ->add('person')
+//            ->add('person')
         ;
     }
     

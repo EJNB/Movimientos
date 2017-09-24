@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 100122
+Source Server         : MYSQL_localhost
+Source Server Version : 100208
 Source Host           : localhost:3306
 Source Database       : movimientosdb
 
 Target Server Type    : MYSQL
-Target Server Version : 100122
+Target Server Version : 100208
 File Encoding         : 65001
 
-Date: 2017-09-23 11:40:31
+Date: 2017-09-23 20:22:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,13 +35,16 @@ CREATE TABLE `equipment` (
   CONSTRAINT `FK_D338D583229E70A7` FOREIGN KEY (`movement_id`) REFERENCES `movement` (`id`) ON DELETE CASCADE,
   CONSTRAINT `FK_D338D5837975B7E7` FOREIGN KEY (`model_id`) REFERENCES `model` (`id`) ON DELETE CASCADE,
   CONSTRAINT `FK_D338D583C54C8C93` FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of equipment
 -- ----------------------------
-INSERT INTO `equipment` VALUES ('20', '1', '2', 'Laptop GDM W950LU 548793 GDMDFJKKDJKFMMJDJ', 'GDMDFJKKDJKFMMJDJ', '548793', '4', '2017-09-22 21:27:50');
-INSERT INTO `equipment` VALUES ('23', '2', '2', 'dhfjdjfhj', 'fgjfhgjfh', '588544', '5', '2017-09-22 00:00:00');
+INSERT INTO `equipment` VALUES ('26', '1', '2', 'Laptop GDM W950LU 4545 FDFDFDF', 'FDFDFDF', '4545', '8', '2017-09-23 12:48:28');
+INSERT INTO `equipment` VALUES ('27', '2', '1', 'Impresora HP Laserjet M227 5487742 DFDFDDFDF', 'DFDFDDFDF', '5487742', null, '2017-09-23 19:29:57');
+INSERT INTO `equipment` VALUES ('28', '2', '1', 'Impresora HP Laserjet M227 4575224 FDRW3DFDF', 'FDRW3DFDF', '4575224', null, '2017-09-23 19:30:54');
+INSERT INTO `equipment` VALUES ('29', '1', '2', 'Laptop GDM W950LU 5477852 DFHJHQ', 'DFHJHQ', '5477852', null, '2017-09-23 19:31:17');
+INSERT INTO `equipment` VALUES ('30', '2', '2', 'Laptop HP Laserjet M227 58541 5D4FDRER', '5D4FDRER', '58541', null, '2017-09-23 19:31:41');
 
 -- ----------------------------
 -- Table structure for intalation
@@ -120,24 +123,19 @@ CREATE TABLE `movement` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `instalation_id` int(11) DEFAULT NULL,
   `person_id` int(11) DEFAULT NULL,
+  `number` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_F4DD95F7A76ED395` (`user_id`),
-  KEY `IDX_F4DD95F7EC7EC6CA` (`instalation_id`),
   KEY `IDX_F4DD95F7217BBB47` (`person_id`),
   CONSTRAINT `FK_F4DD95F7217BBB47` FOREIGN KEY (`person_id`) REFERENCES `person` (`id`),
-  CONSTRAINT `FK_F4DD95F7A76ED395` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  CONSTRAINT `FK_F4DD95F7EC7EC6CA` FOREIGN KEY (`instalation_id`) REFERENCES `intalation` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  CONSTRAINT `FK_F4DD95F7A76ED395` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of movement
 -- ----------------------------
-INSERT INTO `movement` VALUES ('2', '2012-01-01', null, '3', null);
-INSERT INTO `movement` VALUES ('3', '2012-01-01', null, '1', null);
-INSERT INTO `movement` VALUES ('4', '2012-01-01', null, '2', null);
-INSERT INTO `movement` VALUES ('5', '2012-01-01', null, '2', null);
+INSERT INTO `movement` VALUES ('8', '2012-01-01', null, '2', '1');
 
 -- ----------------------------
 -- Table structure for person
@@ -148,12 +146,22 @@ CREATE TABLE `person` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `cargo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `CI` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `instalation_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_34DCD176EC7EC6CA` (`instalation_id`),
+  CONSTRAINT `FK_34DCD176EC7EC6CA` FOREIGN KEY (`instalation_id`) REFERENCES `intalation` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of person
 -- ----------------------------
+INSERT INTO `person` VALUES ('1', 'Daine Sanchez Victoria', 'Asesora Juridica', '88101734099', '2');
+INSERT INTO `person` VALUES ('2', 'Lisandra Nieto Basnueva', 'Directora Comercial', '94050755555', '4');
+INSERT INTO `person` VALUES ('3', 'Belkis Basnueva Cantillo', 'Directora de Calidad', '45478421321', '12');
+INSERT INTO `person` VALUES ('4', 'Pedro Enio Nieto Sanchez', 'J\' Compra', '85156454875', '11');
+INSERT INTO `person` VALUES ('5', 'Juan Martinez', 'Esp. Economico', '78421234575', '5');
+INSERT INTO `person` VALUES ('6', 'Yasley Gonzalez', 'Directora General', '54572121247', '6');
+INSERT INTO `person` VALUES ('7', 'Leopoldo Valdez', 'Subdirector Economico', '78522456366', '7');
 
 -- ----------------------------
 -- Table structure for territory
@@ -193,7 +201,7 @@ CREATE TABLE `type` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_8CDE57295E237E06` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of type
@@ -202,6 +210,8 @@ INSERT INTO `type` VALUES ('1', 'Impresora');
 INSERT INTO `type` VALUES ('2', 'Laptop');
 INSERT INTO `type` VALUES ('5', 'Monitor');
 INSERT INTO `type` VALUES ('9', 'Mouse');
+INSERT INTO `type` VALUES ('12', 'PC POST');
+INSERT INTO `type` VALUES ('11', 'Scaner de pasaporte');
 INSERT INTO `type` VALUES ('8', 'Teclado');
 
 -- ----------------------------
@@ -210,9 +220,18 @@ INSERT INTO `type` VALUES ('8', 'Teclado');
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `occupation` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_8D93D649E7927C74` (`email`),
+  UNIQUE KEY `UNIQ_8D93D649F85E0677` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
+INSERT INTO `user` VALUES ('1', 'javiernieto1989@gmail.com', 'javier', 'javier', 'Enio Javier Nieto Basnueva', 'Especialista Informatico');
+INSERT INTO `user` VALUES ('2', 'informatico1@cubanacan.tur.cu', 'andy', 'andy', 'Andy Garcia Mirabal', 'Especialista Informatico');

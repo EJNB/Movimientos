@@ -28,9 +28,9 @@ class Instalation
      */
     private $name;
 
-       /**
+    /**
      * One Intalation has Many Persons.
-     * @ORM\OneToMany(targetEntity="Person", mappedBy="X")
+     * @ORM\OneToMany(targetEntity="Person", mappedBy="instalation")
      */
     private $persons;
 
@@ -105,5 +105,38 @@ class Instalation
     {
         return $this->getName();
         // TODO: Implement __toString() method.
+    }
+
+    /**
+     * Add persons
+     *
+     * @param \System\MovementBundle\Entity\Person $persons
+     * @return Instalation
+     */
+    public function addPerson(\System\MovementBundle\Entity\Person $persons)
+    {
+        $this->persons[] = $persons;
+
+        return $this;
+    }
+
+    /**
+     * Remove persons
+     *
+     * @param \System\MovementBundle\Entity\Person $persons
+     */
+    public function removePerson(\System\MovementBundle\Entity\Person $persons)
+    {
+        $this->persons->removeElement($persons);
+    }
+
+    /**
+     * Get persons
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPersons()
+    {
+        return $this->persons;
     }
 }
