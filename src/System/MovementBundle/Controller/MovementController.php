@@ -2,9 +2,11 @@
 
 namespace System\MovementBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Response;
 use System\MovementBundle\Entity\Movement;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use System\MovementBundle\Form\MovementType;
 
 /**
  * Movement controller.
@@ -37,7 +39,7 @@ class MovementController extends Controller
         $repository = $em->getRepository('SystemBackendBundle:Equipment');
         $persons = $em->getRepository('SystemMovementBundle:Person')->findAll();
         $movement = new Movement();
-        $form = $this->createForm('System\MovementBundle\Form\MovementType', $movement);
+        $form = $this->createForm(MovementType::class, $movement);
         $form->handleRequest($request);
         $equipments = $repository->findBy(array(
             'movement' => null
@@ -139,5 +141,12 @@ class MovementController extends Controller
             ->setMethod('DELETE')
             ->getForm()
         ;
+    }
+
+    public function findPersonasAction(Request $request){
+        if($request->isXmlHttpRequest()){
+//            $value = $request->request->get('nombre');
+            return new Response('ok');
+        }
     }
 }

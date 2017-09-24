@@ -2,9 +2,11 @@
 
 namespace System\MovementBundle\Form;
 
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class MovementType extends AbstractType
 {
@@ -14,8 +16,8 @@ class MovementType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('date')
-            ->add('instalation','entity',array(
+            ->add('date',DateType::class)
+            ->add('instalation',EntityType::class,array(
                 'class' => 'System\MovementBundle\Entity\Instalation',
                 'mapped' => false
             ))

@@ -22,3 +22,8 @@ movement_delete:
     path:     /{id}/delete
     defaults: { _controller: "SystemMovementBundle:Movement:delete" }
     methods:  DELETE
+
+movement_select_person:
+    path:     /findpersonas
+    defaults: { _controller: "SystemMovementBundle:Movement:findPersonas" }
+#    methods:  DELETE

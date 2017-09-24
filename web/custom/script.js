@@ -15,7 +15,22 @@ $(document).ready(function(){
     })
 
     //seleccionar las personas pertenecientes a la instalacion
-    $('#system_movementbundle_movement_instalation').change(function(){
-        alert()
+    $('.selectpicker').change(function(){
+        var url = $(this).attr('data-url');
+        //alert(url);
+        $.ajax({
+            url : url,
+            data : { nombre : 'Javier' },
+            type : "POST",
+            success : function(response){
+                alert(response)
+            },
+            error : function(){
+                alert('error')
+            },
+            complete : function(){
+                alert('Se ha completado su peticion')
+            }
+        })
     });
 });
